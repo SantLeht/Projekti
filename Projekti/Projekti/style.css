@@ -1,0 +1,85 @@
+body {
+    background-image: url('Sisalto/taustakuva.png'); 
+    background-size: cover;
+    background-position: center; 
+    background-repeat:inherit; 
+    height: 61vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    
+}
+
+nav {
+    background-color: rgba(210, 180, 140, 0.5);
+    padding: 20px;
+    border-radius: 20px;
+    margin: 20px auto 50px; 
+    width: auto;
+    max-width: 1000px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none; 
+    padding:0;
+    margin:0;
+    gap: 40px;
+}
+
+.navbar li{
+    font-style: italic;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    
+}
+.navbar li a{
+    font-size: 30px;
+    display: block;
+}
+
+body li{
+    margin-bottom: 25px;
+}
+
+body p{
+    font-size:larger;
+}
+.tausta{
+    background-color: rgba(210, 180, 140, 0.5);
+    border-radius: 5px;
+    width: auto;
+    max-width: 600px;
+}
+
+.navbar a{
+    color: black;
+    
+
+}
+
+#yleareenakuva{
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.imagegrid{
+    column-count: 3;   /* Kuinka moneen palstaan haluat jakaa sisällön */
+    column-gap: 1em;
+    gap: 5px;
+    padding: 5px;
+    max-width: 1200px;
+}
+.imagegrid img{
+    width: 100%;
+    height: auto;
+    display: block;
+    
+}
