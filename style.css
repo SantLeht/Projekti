@@ -14,54 +14,45 @@ body {
 }
 
 .navbar {
-    display: inline-block; /* Tai display: flex; riippuen ulkonäöstä */
-    background-color: rgba(210, 180, 140, 0.5);
+    display: inline-block;
     padding: 10px;
+    background-color: rgba(210, 180, 140, 0.5);
     border-radius: 20px;
-    text-align: center;
 }
 
 .navbar ul {
-    display: flex; /* Vaakasuunnassa kaikki */
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    gap: 20px;
-}
-
-
-.navbar li{
-    font-style: italic;
-    padding: 0;
-    margin: 0;
     display: flex;
-    justify-content: center;
-    
-}
-.navbar li a{
-    font-size: 30px;
-    display: block;
-}
-
-body li{
-    margin-bottom: 25px;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-body p{
-    font-size:larger;
+.navbar li {
+    font-style: italic;
 }
+
+.navbar a {
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.navbar img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
 .tausta{
     background-color: rgba(210, 180, 140, 0.5);
     border-radius: 5px;
     width: auto;
-    max-width: 600px;
+    max-width: 800px;
 }
 
-.navbar a{
-    color: black;
-    
 
-}
 
 #yleareenakuva{
     max-width: 50px;
