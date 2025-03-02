@@ -8,7 +8,9 @@ function tarkista(){
     const oikeat = {
         q1: "Mustavalkoinen",
         q2: "Kilpi",
-        q3: "1"
+        q3: "1",
+        q4: "v4",
+        q5: "v22"
 
     };
 
@@ -22,7 +24,7 @@ function tarkista(){
             
 
     }
-    document.getElementById("tulos").innerText = `Sait ${pisteet} / 3 oikein!`;
+    document.getElementById("tulos").innerText = `Sait ${pisteet} / 5 oikein!`;
 
 }
 
