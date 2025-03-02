@@ -26,8 +26,54 @@
         </li> 
 
       </ul>
+
       
     </nav>
+
+    <h1>
+      Tervetuloa eläinmanian visaan!
+    </h1>
+
+    <div class="tausta">
+        <p>
+          Visa sisältää 5 eläin aiheista kysymystä joihin pääset vastaamaan. Lopuksi saat
+          tiedon, kuinka hyvin onnostuit visasssa!
+        </p>
+        <form id = "elainvisa">
+          <fieldset>
+            <legend>Minkä värinen eläin zebra on?</legend>
+              <label><input type = "radio" name = "q1" value="Sinivalkoinen">Sinivalkoinen</label><br>
+              <label><input type = "radio" name = "q1" value="Mustavalkoinen">Mustavalkoinen</label><br>
+              <label><input type = "radio" name = "q1" value="Ruskea">Sinivalkoinen</label><br>
+              <label><input type = "radio" name = "q1" value="Keltainen">Sinivalkoinen</label><br>
+          </fieldset>
+          <fieldset>
+            <legend>Mitä kilpikonalla on selässään?</legend>
+          
+            <label><input type = "radio" name = "q2" value="Kuori">Kuori</label><br>
+            <label><input type = "radio" name = "q2" value="Kotelo">Kotelo</label><br>
+            <label><input type = "radio" name = "q2" value="Kilpi">Kilpi</label><br>
+            <label><input type = "radio" name = "q2" value="Suomuja">Suomuja</label><br>
+            
+          </fieldset>
+          <fieldset>
+            <legend>Mikä seuraavista väitteistä on totta?</legend>
+            <label><input type = "radio" name = "q3" value="1">Kotkalla on nokka</label><br>
+            <label><input type = "radio" name = "q3" value="2">Tiikerillä on nokka</label><br>
+            <label><input type = "radio" name = "q3" value="3">Karhulla on nokka</label><br>
+            <label><input type = "radio" name = "q3" value="4">Siilillä on nokka</label><br>
+          </fieldset>
+             
+
+             
+
+          <button type ="button" onclick="tarkista()">Tarkista</button>
+
+
+        </form>
+
+        <p id ="tulos"></p>
+    </div>
 
     
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
