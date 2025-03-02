@@ -25,3 +25,23 @@ function tarkista(){
     document.getElementById("tulos").innerText = `Sait ${pisteet} / 3 oikein!`;
 
 }
+
+function playsound1(){
+    const audio = new Audio('Sisalto/Elefant.mp3');
+    audio.play();
+}
+function playsound2(){
+    const audio = new Audio('Sisalto/wolf.mp3');
+    audio.play();
+}
+function playsound3(){
+    const audio = new Audio('Sisalto/lehmä.mp3');
+    audio.play();
+}
+function playsound4(){
+    const audio = new Audio('Sisalto/bee.mp3');
+    audio.play();
+}
+function playsound5(){
+    
+}

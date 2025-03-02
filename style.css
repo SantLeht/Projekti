@@ -2,7 +2,7 @@ body {
     background-image: url('Sisalto/taustakuva.png'); 
     background-size: cover;
     background-position: center; 
-    background-repeat:inherit; 
+    background-repeat:initial;
     height: 61vh;
     margin: 0;
     padding: 0;
@@ -61,31 +61,31 @@ body {
 
 .imagegrid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 saraketta */
-    gap: 10px; /* Tilaa elementtien väliin */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px; 
     padding: 10px;
     max-width: 1200px;
-    box-sizing: border-box; /* Varmistaa ettei padding sotke leveyksiä */
+    box-sizing: border-box; 
 }
 
 .imagegrid .item {
     display: flex;
-    flex-direction: column; /* Kuva päälle, teksti alle */
+    flex-direction: column; 
     align-items: center;
     text-align: center;
     gap: 5px;
-    background-color: #f9f9f9; /* Taustaväri jos haluat erottelua */
+    background-color: #f9f9f9; 
     padding: 5px;
-    border: 1px solid #ddd; /* Kevyt rajaviiva erotteluun */
-    border-radius: 5px; /* Pyöristetyt kulmat */
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
 }
 
 .imagegrid img {
     width: 100%;
     height: auto;
     display: block;
-    object-fit: cover; /* Varmistaa, että kuvat täyttävät tilansa nätisti */
-    max-height: 150px; /* Esim. rajoita kuvan korkeus */
+    object-fit: cover; 
+    max-height: 150px;
 }
 
 .imagegrid p {
