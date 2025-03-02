@@ -59,16 +59,39 @@ body {
     max-height: 50px;
 }
 
-.imagegrid{
-    column-count: 3;   /* Kuinka moneen palstaan haluat jakaa sisällön */
-    column-gap: 1em;
-    gap: 5px;
-    padding: 5px;
+.imagegrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 saraketta */
+    gap: 10px; /* Tilaa elementtien väliin */
+    padding: 10px;
     max-width: 1200px;
+    box-sizing: border-box; /* Varmistaa ettei padding sotke leveyksiä */
 }
-.imagegrid img{
+
+.imagegrid .item {
+    display: flex;
+    flex-direction: column; /* Kuva päälle, teksti alle */
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+    background-color: #f9f9f9; /* Taustaväri jos haluat erottelua */
+    padding: 5px;
+    border: 1px solid #ddd; /* Kevyt rajaviiva erotteluun */
+    border-radius: 5px; /* Pyöristetyt kulmat */
+}
+
+.imagegrid img {
     width: 100%;
     height: auto;
     display: block;
-    
+    object-fit: cover; /* Varmistaa, että kuvat täyttävät tilansa nätisti */
+    max-height: 150px; /* Esim. rajoita kuvan korkeus */
 }
+
+.imagegrid p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
