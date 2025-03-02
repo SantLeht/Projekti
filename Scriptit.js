@@ -43,5 +43,6 @@ function playsound4(){
     audio.play();
 }
 function playsound5(){
-    
+    const audio = new Audio('Sisalto/kissa_ääni.mp3');
+    audio.play();
 }
