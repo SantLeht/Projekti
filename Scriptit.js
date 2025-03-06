@@ -10,7 +10,8 @@ function tarkista(){
         q2: "Kilpi",
         q3: "1",
         q4: "v4",
-        q5: "v22"
+        q5: "v22",
+        q6: "v33"
 
     };
 
@@ -24,7 +25,7 @@ function tarkista(){
             
 
     }
-    document.getElementById("tulos").innerText = `Sait ${pisteet} / 5 oikein!`;
+    document.getElementById("tulos").innerText = `Sait ${pisteet} / 6 oikein!`;
 
 }
 
@@ -48,3 +49,5 @@ function playsound5(){
     const audio = new Audio('Sisalto/kissa_ääni.mp3');
     audio.play();
 }
+
+
