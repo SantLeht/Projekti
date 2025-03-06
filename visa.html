@@ -13,22 +13,23 @@
   <body>
     
     <nav class="navbar">
-      <ul>
-        <li><a id ="etusivu" href="index.html">Etusivu</a></li>
-        <li><a id="äänet" href="kuvat.html">Kuvat</a></li>
-        <li><a id="kuvat" href="äänet.html">Äänet</a></li>
-        <li><a id="visa" href="visa.html">Visa</a></li>
-        <li>
-          <a href="https://areena.yle.fi/lapset/ohjelmat/30-2912">
-              <img id="yleareenakuva" src="Sisalto/Yleareenalapset.png">
-          </a>
-          
-        </li> 
-
+      <ul class="nav-links">
+          <li><a href="index.html">Etusivu</a></li>
+          <li><a href="kuvat.html">Kuvat</a></li>
+          <li><a href="äänet.html">Äänet</a></li>
+          <li><a href="visa.html">Visa</a></li>
+          <li>
+              <a href="https://areena.yle.fi/lapset/ohjelmat/30-2912">
+                  <img class="nav-icon" src="Sisalto/Yleareenalapset.png" alt="Yle Areena">
+              </a>
+          </li>
       </ul>
-
-      
-    </nav>
+      <div class="burger" onclick="toggleMenu()">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+      </div>
+  </nav>
 
     
     <div class="tausta">
