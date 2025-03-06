@@ -16,25 +16,43 @@ body {
 
 .navbar {
     display: flex;
-    justify-content: space-between; /* Jakaa tilan linkkien ja burgerin kesken */
+    justify-content: space-between;
     align-items: center;
     position: sticky;
     top: 0;
     width: 100%;
-    padding: 10px;
     background-color: rgba(245, 222, 179, 0.9);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     z-index: 1000;
+    padding: 10px;
+    box-sizing: border-box;
 }
-
 
 .nav-links {
     display: flex;
-    align-items: center;
-    gap: 50px;
+    gap: 15px;
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        background-color: rgba(245, 222, 179, 0.95);
+        z-index: 999;
+        padding: 10px;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    .burger {
+        display: flex;
+    }
 }
 
 .navbar li {
@@ -67,40 +85,23 @@ body {
     background-color: black;
 }
 
-@media (max-width: 768px) {
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-        width: 100%;
-        background-color: rgba(245, 222, 179, 0.95);
-        padding: 10px;
-        position: absolute;
-        top: 50px;
-        left: 0;
-        z-index: 999;
-    }
 
-    .nav-links.active {
-        display: flex;
-    }
-
-    .burger {
-        display: flex;
-    }
-}
-
-.tausta{
-    background-color:rgba(255, 255, 171, 0.651);
-    border-radius: 10px;
-    margin-top: 50px;
-    width: auto;
+.tausta {
+    width: 100%;
     max-width: 900px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-    padding: 50px;
+    padding: 20px;
+    background-color: rgba(255, 255, 171, 0.651);
+    margin: 20px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
 }
 
+@media (max-width: 768px) {
+    .tausta {
+        padding: 15px;
+        margin: 10px;
+    }
+}
 
 
 #yleareenakuva{
@@ -164,4 +165,11 @@ body {
     padding: 50px;
     width: 100%;
     background-color:rgba(255, 255, 171, 0.651);
+}
+
+iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    max-width: 100%;
 }
