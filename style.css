@@ -1,19 +1,25 @@
+/* Yleiset tyylit */
 body {
     background-image: url('Sisalto/taustakuva2.png'); 
-    background-size:cover;
+    background-size: cover;
     background-position: center; 
     background-attachment: fixed;
-    background-repeat:no-repeat;
-    height: auto;
+    background-repeat: no-repeat;
     margin: 0;
     padding: 0;
     display: flex;
     align-items: center;
     flex-direction: column;
-
-    
+    font-size: 18px;
 }
 
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+/* Navigaatio */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -22,37 +28,19 @@ body {
     top: 0;
     width: 100%;
     background-color: rgba(245, 222, 179, 0.9);
-    z-index: 1000;
     padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
     box-sizing: border-box;
 }
 
 .nav-links {
     display: flex;
+    align-items: center;
     gap: 15px;
     list-style: none;
     margin: 0;
     padding: 0;
-}
-
-@media (max-width: 768px) {
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        position: absolute;
-        top: 50px;
-        left: 0;
-        background-color: rgba(245, 222, 179, 0.95);
-        z-index: 999;
-        padding: 10px;
-    }
-    .nav-links.active {
-        display: flex;
-    }
-    .burger {
-        display: flex;
-    }
 }
 
 .navbar li {
@@ -60,7 +48,7 @@ body {
 }
 
 .navbar a {
-    font-size: 30px;
+    font-size: 18px;
     text-decoration: none;
     color: black;
     font-weight: bold;
@@ -72,6 +60,7 @@ body {
     vertical-align: middle;
 }
 
+/* Burger-menu (mobiiliin) */
 .burger {
     display: none;
     flex-direction: column;
@@ -85,14 +74,38 @@ body {
     background-color: black;
 }
 
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: rgba(245, 222, 179, 0.95);
+        padding: 10px;
+        box-sizing: border-box;
+        z-index: 999;
+    }
 
+    .nav-links.active {
+        display: flex;
+    }
+
+    .burger {
+        display: flex;
+    }
+}
+
+/* Taustalaatikko */
 .tausta {
+    background-color: rgba(255, 255, 171, 0.651);
+    border-radius: 10px;
+    margin: 20px;
     width: 100%;
     max-width: 900px;
     padding: 20px;
-    background-color: rgba(255, 255, 171, 0.651);
-    margin: 20px auto;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
     box-sizing: border-box;
 }
 
@@ -103,19 +116,34 @@ body {
     }
 }
 
-
-#yleareenakuva{
-    max-width: 50px;
-    max-height: 50px;
+/* Taustan tekstityylit */
+.tausta p {
+    font-size: 20px;
+    margin-bottom: 15px;
 }
 
+@media (max-width: 768px) {
+    .tausta p {
+        font-size: 14px;
+    }
+}
+
+/* Iframe (video) */
+iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    max-width: 100%;
+}
+
+/* Kuvagalleria */
 .imagegrid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px; 
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
     padding: 10px;
     max-width: 100%;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 .imagegrid .item {
@@ -124,7 +152,7 @@ body {
     align-items: center;
     text-align: center;
     gap: 5px;
-    background-color:rgba(255, 255, 171, 0.651); 
+    background-color: rgba(255, 255, 171, 0.651); 
     padding: 5px;
     border: 1px solid #ddd; 
     border-radius: 5px; 
@@ -133,7 +161,6 @@ body {
 .imagegrid img {
     width: 100%;
     height: auto;
-    display: block;
     object-fit: cover; 
     max-height: 500px;
     max-width: 500px;
@@ -146,30 +173,12 @@ body {
     color: #333;
 }
 
-.tausta p {
-    font-size: 20px;
-}
-
-
-.alapalkki{
+/* Alapalkki */
+.alapalkki {
     flex-grow: 1;
     margin-top: 100px;
     padding: 50px;
     width: 100%;
-    background-color:rgba(245, 222, 179, 0.9);
-}
-
-.äalapalkki{
-    flex-grow: 1;
-    
-    padding: 50px;
-    width: 100%;
-    background-color:rgba(255, 255, 171, 0.651);
-}
-
-iframe {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 16 / 9;
-    max-width: 100%;
+    background-color: rgba(245, 222, 179, 0.9);
+    box-sizing: border-box;
 }
