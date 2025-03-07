@@ -81,8 +81,8 @@ html, body {
     background-color: rgba(255, 255, 171, 0.651);
     border-radius: 10px;
     margin: 20px;
-    width: 60%;
-    max-width: 60%;
+    width: 70%;
+    max-width: 70%;
     padding: 20px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
     box-sizing: border-box;
@@ -105,13 +105,29 @@ iframe {
     max-width: 100%;
 }
 
+
+
+/* Tabletit (keskikokoiset näytöt) */
+@media (min-width: 600px) and (max-width: 1023px) {
+    .imagegrid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+/* Puhelimet (pienet näytöt) */
+@media (max-width: 599px) {
+    .imagegrid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+
 /* Kuvagalleria */
 .imagegrid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 10px;
     padding: 10px;
-    width: 80%;
+    width: 90%;
     box-sizing: border-box;
     margin: 0 auto;
 }
@@ -132,7 +148,7 @@ iframe {
 .imagegrid img {
     width: 100%;
     height: auto;
-    object-fit: contain;
+    object-fit: cover;
     max-height: none;
     max-width: 100%;
 }
