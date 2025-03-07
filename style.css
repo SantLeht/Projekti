@@ -120,10 +120,15 @@ iframe {
     display: none;
     flex-direction: column;
     align-items: center;
+    position: absolute;
+    top:100%;
+    left:0;
     gap: 30px;
+    background-color: rgba(245, 222, 179, 0.9);
     list-style: none;
     margin: 0 auto;
-    padding: 0;
+    padding: 10px 0;
+    gap: 10px;
 }
 
 .nav-links.active{
@@ -215,7 +220,6 @@ iframe {
     .nav-links{
         display: none;
         flex-direction: row;
-        position: static;
         background-color: transparent;
     }
     .burger{
@@ -238,6 +242,6 @@ iframe {
     }
 
     .burger {
-        display: none; /* Piilota burger isoilla näytöillä */
+        display: none; 
     }
 }
