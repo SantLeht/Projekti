@@ -127,6 +127,7 @@ html, body {
     .tausta {
         padding: 15px;
         margin: 10px;
+        max-width: 90%;
     }
     .tausta p {
         font-size: 14px;
@@ -139,7 +140,7 @@ html, body {
     border-radius: 10px;
     margin: 20px;
     width: 100%;
-    max-width: 900px;
+    max-width: 80%;
     padding: 20px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
     box-sizing: border-box;
@@ -168,8 +169,7 @@ iframe {
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 10px;
     padding: 10px;
-    width: 80%;
-    max-width: 2000px;
+    width: 90%;
     box-sizing: border-box;
     margin: 0 auto;
 }
