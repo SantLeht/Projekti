@@ -189,10 +189,11 @@ iframe {
     .tausta h1{
         font-size: 25px;
     }
-    
     .nav-links{
         display: none;
     }
+    
+    
     .nav-links.active{
         display: flex;
     }
