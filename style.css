@@ -170,6 +170,9 @@ iframe {
     .burger{
         display: flex;
     }
+    .nav-links{
+        display: none;
+    }
 }
 
 
@@ -186,7 +189,11 @@ iframe {
     .tausta h1{
         font-size: 25px;
     }
-    .burger{
+    
+    .nav-links{
+        display: none;
+    }
+    .nav-links.active{
         display: flex;
     }
     
