@@ -143,10 +143,10 @@ iframe {
 /* Kuvagalleria */
 .imagegrid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 10px;
     padding: 10px;
-    width: 100%;
+    width: 80%;
     max-width: 2000px;
     box-sizing: border-box;
     margin: 0 auto;
@@ -167,9 +167,9 @@ iframe {
 .imagegrid img {
     width: 100%;
     height: auto;
-    object-fit: cover; 
-    max-height: 500px;
-    max-width: 500px;
+    object-fit: contain;
+    max-height: none;
+    max-width: 100%;
 }
 
 .imagegrid p {
