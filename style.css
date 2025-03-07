@@ -219,8 +219,7 @@ iframe {
     }
     .nav-links{
         display: none;
-        flex-direction: row;
-        background-color: transparent;
+        
     }
     .burger{
         display: flex;
