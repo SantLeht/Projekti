@@ -51,6 +51,6 @@ function playsound5(){
 }
 
 function toggleMenu() {
-    const navLinks = document.querySelector('.nav-links').classList.toggle('active');
+    document.querySelector('.nav-links').classList.toggle('active');
     
 }
