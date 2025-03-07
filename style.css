@@ -98,6 +98,7 @@ html, body {
     .imagegrid {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
         padding: 5px; /* tiiviimpi padding */
+        width: 90%;
     }
     body {
         font-size: 14px;
