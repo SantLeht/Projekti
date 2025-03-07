@@ -145,7 +145,7 @@ iframe {
     color: #333;
 }
 
-/* Alapalkki */
+
 .alapalkki {
     flex-grow: 1;
     margin-top: 100px;
@@ -155,14 +155,24 @@ iframe {
     box-sizing: border-box;
 }
 
+.burger{
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
 
 @media (min-width: 600px) and (max-width: 1023px) {
     .imagegrid {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
+    .burger{
+        display: flex;
+    }
 }
 
-/* Puhelimet (pienet näytöt) */
+
 @media (max-width: 599px) {
     .imagegrid {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -176,4 +186,8 @@ iframe {
     .tausta h1{
         font-size: 25px;
     }
+    .burger{
+        display: flex;
+    }
+    
 }
